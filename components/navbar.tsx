@@ -31,22 +31,22 @@ export function NavBar() {
                                 </Link>
                             </DialogClose>
                             <DialogClose asChild>
-                                <Link href="/software">
-                                    <Button variant="outline" className="w-full">Services</Button>
+                                <Link href="/industries">
+                                    <Button variant="outline" className="w-full">industries</Button>
                                 </Link>
                             </DialogClose>
                             <DialogClose asChild>
-                                <Link href="/automation">
-                                    <Button variant="outline" className="w-full">About</Button>
+                                <Link href="/about">
+                                    <Button variant="outline" className="w-full">About us</Button>
                                 </Link>
                             </DialogClose>
                             <DialogClose asChild>
-                                <Link href="/blog">
-                                    <Button variant="outline" className="w-full">Projects</Button>
+                                <Link href="/capabilities">
+                                    <Button variant="outline" className="w-full">capabilities</Button>
                                 </Link>
                             </DialogClose>
                             <DialogClose asChild>
-                                <Link href="/projects">
+                                <Link href="/contact">
                                     <Button variant="outline" className="w-full">Contact us</Button>
                                 </Link>
                             </DialogClose>
@@ -67,16 +67,16 @@ export function NavBar() {
                     </NavigationMenuList>
                 </NavigationMenu>
                 <div className="flex items-center gap-2 max-[825px]:hidden">
-                    <Link href="/software">
-                        <Button variant="ghost">Services</Button>
+                    <Link href="/industries">
+                        <Button variant="ghost">industries</Button>
                     </Link>
-                    <Link href="/automation">
-                        <Button variant="ghost">Projects</Button>
+                    <Link href="/capabilities">
+                        <Button variant="ghost">capabilities</Button>
                     </Link>
-                    <Link href="/blog">
-                        <Button variant="ghost">About</Button>
+                    <Link href="/about">
+                        <Button variant="ghost">About us</Button>
                     </Link>
-                    <Link href="/projects">
+                    <Link href="/contact">
                         <Button variant="ghost">Contact us</Button>
                     </Link>
                     <Link href="/quote">

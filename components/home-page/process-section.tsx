@@ -11,19 +11,19 @@ const ProcessStep = ({ number, icon, title, description }: {
   title: string;
   description: string;
 }) => (
-  <div className="flex flex-col items-center text-center relative">
+  <div className="flex flex-col items-center text-pretty text-center relative">
     {/* Number Circle */}
-    <div className="absolute -top-6 bg-white rounded-full w-12 h-12 flex items-center justify-center border-2 border-red-500">
+    <div className="absolute -top-6 bg-white dark:bg-gray-800 rounded-full w-12 h-12 flex items-center justify-center border-2 border-red-500">
       <span className="text-red-500 text-xl font-bold">{number}</span>
     </div>
 
     {/* Card Content */}
-    <div className="pt-8 p-6 bg-white rounded-lg shadow-lg min-h-[320px] flex flex-col items-center w-full">
-      <div className="mb-6 text-gray-700">
+    <div className="pt-8 p-2 bg-white dark:bg-gray-800 rounded-lg shadow-lg flex flex-col items-center w-full ">
+      <div className="mb-6 text-gray-700 dark:text-gray-300 [&>svg]:w-16 [&>svg]:h-16 [&>svg>path]:dark:fill-gray-300">
         {icon}
       </div>
-      <h3 className="text-md font-bold mb-4 text-gray-800">{title}</h3>
-      <p className="text-gray-600 leading-relaxed text-sm">{description}</p>
+      <h3 className="text-md font-bold mb-4 text-gray-800 dark:text-white h-16">{title}</h3>
+      <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm h-52">{description}</p>
     </div>
   </div>
 );
@@ -76,15 +76,15 @@ const ProcessSection = () => {
   ];
 
   return (
-    <Section className="py-16 bg-gray-50">
+<Section className="py-16 bg-gray-50 dark:bg-gray-900">
       <Container>
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-2">
-            How <span className="bg-gray-800 text-white px-4 py-2 rounded-lg">Our Process</span> Works
+            How <span className="bg-gray-800 dark:bg-gray-700 text-white px-4 py-2 rounded-lg">Our Process</span> Works
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
           {steps.map((step, index) => (
             <ProcessStep
               key={index}
